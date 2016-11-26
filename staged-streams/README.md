@@ -1,7 +1,8 @@
 # Staged streams
 
-Adapted from
-[staged-streams.ocaml](https://github.com/strymonas/staged-streams.ocaml).
+This is a direct copy of the amazing
+[strymonas](https://github.com/strymonas/staged-streams.ocaml) library. All I
+did was to replace MetaOCaml syntax with macro syntax, and lift a few modules.
 
 ```ocaml
 $ ocamlc -dsource test.ml
