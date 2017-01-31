@@ -34,7 +34,7 @@ end
 module S_sta : Symantics
   with type ('c, 'sv, 'dv) repr = 'dv
 = struct
-  open ^Pervasives
+  open ~Pervasives
   type ('c, 'sv, 'dv) repr = 'dv
   macro int x = x
   macro bool b = b
