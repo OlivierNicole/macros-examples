@@ -47,7 +47,7 @@
   on the stream structure and internals.
  *)
 
-static (@@) = ^Pervasives.(@@)
+static (@@) = ~Pervasives.(@@)
 
 type card_t = AtMost1 | Many
 
@@ -224,7 +224,7 @@ macro take_raw   : int expr -> 'a st_stream -> 'a st_stream =
          card;
          (* For filter, we assume that is a dependent stream... *)
          term = (fun (nr,s) ->
-                 let (=) = ^Pervasives.(=) in
+                 let (=) = ~Pervasives.(=) in
                  if card = Many then << ! $nr > 0 && $(term s) >> else term s);
          step = (fun (nr,s) k -> step s (fun el -> k (nr,el)))}
       in Prod ({init},prod)
