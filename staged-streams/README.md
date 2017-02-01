@@ -5,7 +5,7 @@ This is a direct copy of the amazing
 did was to replace MetaOCaml syntax with macro syntax, and lift a few modules.
 
 ```ocaml
-$ ocamlc -dsource test.ml
+$ ocamlc -dsource staged_streams_test.ml
 open Stream_combinators_s
 static (|>) = (^Pervasives).(|>) 
 macro example () =
