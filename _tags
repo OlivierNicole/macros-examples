@@ -3,3 +3,5 @@ true: bin_annot, strict_sequence, debug, principal
 
 "finally_tagless": include
 "staged-streams": include
+
+<staged-streams/staged_streams_test.*>: stream_combinators_dep
